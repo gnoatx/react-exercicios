@@ -1,0 +1,15 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.paragraph {
+    flex: none;
+}
+
+.textarea {
+    resize: none;
+    width: 100%;
+    word-break: break-all;
+}

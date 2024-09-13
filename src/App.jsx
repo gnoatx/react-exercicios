@@ -6,6 +6,8 @@ import { ColourChange } from './components/Ex4'
 import { UserProfile } from './components/Ex5'
 import { ToggleVisibility } from './components/Ex6'
 import { TextBox } from './components/Ex7'
+import { WordCount } from './components/Ex8'
+import { Calculator } from './components/Ex9'
 
 function App() {
   const list = [
@@ -24,6 +26,8 @@ function App() {
       <UserProfile name="Victor" age="27" photo="src/components/Ex5/photo.jpg"></UserProfile>
       <ToggleVisibility></ToggleVisibility>
       <TextBox></TextBox>
+      <WordCount></WordCount>
+      <Calculator></Calculator>
     </>
   )
 }
