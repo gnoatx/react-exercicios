@@ -1,0 +1,11 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.paragraph {
+    width: 300px;
+    word-break: break-all;
+    flex: none;
+}

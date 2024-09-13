@@ -1,33 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Greeting } from './components/Ex1'
+import { Counter } from './components/Ex2'
+import { List } from './components/Ex3'
+import { ColourChange } from './components/Ex4'
+import { UserProfile } from './components/Ex5'
+import { ToggleVisibility } from './components/Ex6'
+import { TextBox } from './components/Ex7'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const list = [
+    "Comer pão",
+    "Comprar pão",
+    "Escrever código",
+    "Dormir"
+  ]
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Greeting name="Victor"></Greeting>
+      <Counter></Counter>
+      <List list={list}></List>
+      <ColourChange></ColourChange>
+      <UserProfile name="Victor" age="27" photo="src/components/Ex5/photo.jpg"></UserProfile>
+      <ToggleVisibility></ToggleVisibility>
+      <TextBox></TextBox>
     </>
   )
 }
