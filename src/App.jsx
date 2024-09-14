@@ -1,5 +1,6 @@
 import './App.css'
 import { Greeting } from './components/Ex1'
+import { Gallery } from './components/Ex10'
 import { Counter } from './components/Ex2'
 import { List } from './components/Ex3'
 import { ColourChange } from './components/Ex4'
@@ -17,6 +18,19 @@ function App() {
     "Dormir"
   ]
 
+  const images = [
+    'src/components/Ex10/all ears.webp',
+    'src/components/Ex10/bitch.png',
+    'src/components/Ex10/cat thumbs up.png',
+    'src/components/Ex10/grrcoon.jpg',
+    'src/components/Ex10/sailordog.jpg',
+    'src/components/Ex10/stooooooop fiiighting.jpg',
+    'src/components/Ex10/shibe nose.jpg',
+    'src/components/Ex10/say that again.jpg',
+    'src/components/Ex10/oh wow.jpg',
+    'src/components/Ex10/coon.jpg'
+  ]
+
   return (
     <>
       <Greeting name="Victor"></Greeting>
@@ -28,6 +42,7 @@ function App() {
       <TextBox></TextBox>
       <WordCount></WordCount>
       <Calculator></Calculator>
+      <Gallery images={images}></Gallery>
     </>
   )
 }
